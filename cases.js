@@ -8,12 +8,12 @@ const CASES = [
     actions: ['홈페이지·검색광고·디스플레이 광고·언론홍보에 공통 메시지 적용', '시설 사진과 영상 촬영을 외부업체와 진행하고 프리미엄 시설 브로슈어 기획', '학생의 목소리를 담은 인터뷰 영상 제작'],
     evidence: '확장 이전 캠페인에 사용한 영상 캡처, 시설 소개 브로슈어, 홈페이지와 언론 보도 자료입니다.',
     gallery: [
-      {src:'media/asset-01-02.png', caption:'시설 소개 브로슈어', wide:true},
+      {src:'media/asset-01-02.png', caption:'시설 소개 브로슈어'},
       {src:'media/asset-01-01.jpg', caption:'프리미엄 시설 홍보영상 캡처'},
       {src:'media/asset-01-03.jpg', caption:'재원생 인터뷰 홍보영상 캡처'},
-      {src:'media/asset-01-04.jpg', caption:'홈페이지 홍보 페이지 기획', wide:true},
-      {src:'media/asset-01-05.jpg', caption:'확장 개원 홍보 기사', wide:true},
-      {src:'media/asset-01-06.jpg', caption:'그랜드 오픈 홍보 기사', wide:true}
+      {src:'media/asset-01-04.jpg', caption:'홈페이지 홍보 페이지 기획'},
+      {src:'media/asset-01-05.jpg', caption:'확장 개원 홍보 기사'},
+      {src:'media/asset-01-06.jpg', caption:'그랜드 오픈 홍보 기사'}
     ],
     diagram: ['명성과 운영 노하우 + 프리미엄 시설', '확장 이전 공통 메시지', '홈페이지 · 광고 · 언론 · 브로슈어'],
     metrics: [
@@ -35,18 +35,6 @@ const CASES = [
     related: ['윈터스쿨 홍보영상 보기', 'https://naver.me/xnOyZQJf'],
     metrics: [{value:'3개년', label:'개발 슬로건 활용'}],
     insight: '채널별 제작물에 공통 콘셉트를 담고, 학원별 실무자가 같은 방향으로 적용할 수 있도록 가이드로 남겼습니다.'
-  },
-  {
-    title: '메가 스마트 리포트 홍보 콘텐츠 개선',
-    headline: '기능을 설명하던 화면에 학생의 변화를 담다',
-    background: '홈페이지가 기능을 나열하고 있어 학생이 학습 과정에서 프로그램을 어떻게 활용할 수 있는지 구체적으로 전달하기 어려웠습니다.',
-    strategy: '우수사례를 중심으로 페이지를 재구성해, 활용 방법과 학생의 변화가 함께 읽히도록 기획했습니다.',
-    role: '유관부서와 우수사례 발굴, 홈페이지 및 합격 후기 콘텐츠 기획.',
-    actions: ['학생의 성적 향상·학습법 개선·대학 합격 사례 발굴', '실제 학생 사례를 홈페이지와 합격 후기 콘텐츠에 반영'],
-    evidence: '개편 결과물 · 홈페이지 및 합격 후기 콘텐츠',
-    diagram: ['개편 전 · 기능 소개 중심', '개편 후 · 학생의 활용 방법과 변화 중심'],
-    metrics: [{value:'활용 가치 전달 강화', label:'실제 학생 사례 중심으로 콘텐츠 개편'}],
-    insight: '기능을 어떤 상황에서 활용하는지 보여주면, 고객은 자신에게 필요한 프로그램인지 더 구체적으로 판단할 수 있습니다.'
   },
   {
     title: '광고 구조 개편 및 예산 운영 최적화',

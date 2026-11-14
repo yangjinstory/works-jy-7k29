@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /media/
-Disallow: /*/media/
+Disallow: /works-jy-7k29/media/
