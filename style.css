@@ -263,3 +263,16 @@ h2 {
   #project-2 .portfolio-materials figure { padding:5px; }
   #project-2 .portfolio-materials figcaption { font-size:11px; }
 }
+
+#case-4 .case-gallery { align-items:start; }
+#case-4 .case-figure:first-child { grid-row:span 3; }
+#case-4 .case-figure:first-child .material-button { aspect-ratio:auto; }
+#case-4 .case-figure:first-child img {
+  height:auto;
+  max-height:540px;
+  aspect-ratio:auto;
+}
+@media (max-width:520px) {
+  #case-4 .case-gallery { grid-template-columns:1fr; }
+  #case-4 .case-figure:first-child { grid-row:auto; }
+}
