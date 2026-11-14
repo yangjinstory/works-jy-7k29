@@ -10,7 +10,8 @@ function caseMetrics(item) {
   const scale = Math.max(100, ...item.metrics.map(metric => metric.index ?? 0));
   return `<div class="case-metrics">${item.metrics.map(metric => `
     <div class="case-metric">
-      <span>${escapeHtml(metric.label)}</span><strong>${escapeHtml(metric.value)}</strong>
+      ${metric.label ? `<span>${escapeHtml(metric.label)}</span>` : ''}<strong>${escapeHtml(metric.value)}</strong>
+      ${metric.description ? `<p class="note">${escapeHtml(metric.description)}</p>` : ''}
       ${metric.index ? `<div class="index-bars" role="img" aria-label="기준 100, 비교 지수 ${metric.index}">
         <div><i style="width:${100 / scale * 100}%"></i><b>100</b></div>
         <div><i style="width:${metric.index / scale * 100}%"></i><b>${metric.index}</b></div>
@@ -52,7 +53,7 @@ if (document.getElementById('caseCards')) {
           ${caseLink(item)}
         </div>
       </div>
-      <div class="case-outcome"><h3>프로젝트 성과 및 인사이트</h3>${caseMetrics(item)}<p>${escapeHtml(item.insight)}</p></div>
+      <div class="case-outcome"><h3>프로젝트 성과 및 인사이트</h3>${caseMetrics(item)}${item.insightHeading ? `<h4>${escapeHtml(item.insightHeading)}</h4>` : ''}<p>${escapeHtml(item.insight)}</p></div>
       <a class="case-top" href="#cases">↑ 주요 성과 사례 목록으로</a>
     </article>`).join('');
 }
