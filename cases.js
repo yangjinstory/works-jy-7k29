@@ -29,8 +29,11 @@ const CASES = [
       '검색광고·디스플레이 광고·홍보영상에 공통 메시지와 콘셉트 적용',
       '학원별 교재 표지·브로슈어 표지·오프라인 홍보물에 적용할 가이드 배포'
     ],
-    evidence: '윈터스쿨 모집 홈페이지 및 홍보영상',
-    media: {src:'media/asset-21.jpg', caption:'윈터스쿨 홈페이지 · 기존 작업물 발췌'},
+    evidence: '윈터스쿨 디자인 비교 및 채널별 홍보물',
+    gallery: [
+      {src:'media/asset-02-01.png', caption:'2022·2023 윈터스쿨 디자인 비교', wide:true},
+      {src:'media/asset-02-02.png', caption:'윈터스쿨 홍보물 5종', wide:true}
+    ],
     related: ['윈터스쿨 홍보영상 보기', 'https://naver.me/xnOyZQJf'],
     metrics: [
       {value:'3개년', label:'개발 슬로건 활용'},
@@ -45,8 +48,8 @@ const CASES = [
     role: '광고 구조 진단, 통합 홍보 홈페이지 기획, 수강생 선택 요인·경쟁사 집행 조사, 시즌별 예산 조정',
     actions: ['3개 기숙학원의 특성을 한눈에 비교할 수 있는 통합 홍보 홈페이지 기획 및 광고 유입 경로 통합', '수강생의 학원 선택 이유 1위가 브랜드 인지도라는 점과 경쟁사의 비수기 집행이 적다는 점을 조사', '비수기 광고비를 최소화하고 성수기에 추가 집행'],
     gallery: [
-      {src:'media/asset-03-01.png', caption:'기숙학원 광고 구조 개편 전후'},
-      {src:'media/asset-03-02.jpg', caption:'비수기·성수기 광고 예산 재배분'}
+      {src:'media/asset-03-01.png', caption:'기숙학원 광고 구조 개편 전후', wide:true},
+      {src:'media/asset-03-02.jpg', caption:'비수기·성수기 광고 예산 재배분', wide:true}
     ],
     chartNote: '항목별 전년 수치를 100으로 환산 · 세 지표의 집계 범위와 비교 기간 확인 필요',
     metrics: [

@@ -218,7 +218,8 @@ h2 {
 .case-figure { min-width:0; margin:0; }
 .case-figure-wide { grid-column:1 / -1; }
 .case-figure .material-button { display:block; width:100%; aspect-ratio:16/10; background:var(--pale); border-radius:6px; }
-.case-figure-wide .material-button { aspect-ratio:1.6; }
+.case-figure-wide .material-button { aspect-ratio:auto; }
+.case-figure-wide img { aspect-ratio:auto; height:auto; }
 .case-figure img { display:block; width:100%; height:100%; object-fit:contain; }
 .case-figure figcaption { margin-top:6px; color:var(--muted); font-size:.83rem; }
 .case-video { display:inline-block; margin:8px 0; color:var(--blue); font-weight:700; text-decoration:underline; text-underline-offset:3px; }
