@@ -46,7 +46,7 @@ if (document.getElementById('caseCards')) {
       <div class="campaign-grid">
         ${caseNarrative(item)}
         <div class="case-evidence">
-          <h3>${item.gallery || item.media || item.extra ? '참고 이미지' : '개편 구조'}</h3><p>${escapeHtml(item.evidence)}</p>
+          <h3>${item.gallery || item.media || item.extra ? '참고 이미지' : '개편 구조'}</h3>${item.evidence ? `<p>${escapeHtml(item.evidence)}</p>` : ''}
           ${caseDiagram(item.diagram)}
           <div class="case-gallery">${(item.gallery ?? [item.media, item.extra].filter(Boolean)).map(caseMedia).join('')}</div>
           ${caseLink(item)}
