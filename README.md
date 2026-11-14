@@ -6,7 +6,7 @@
 
 ## 기존 GitHub Pages 사이트에 반영하기
 
-1. 직전 사례 1 수정본을 배포했다면 `cases.js`를 교체하고, 새 파일 `media/asset-03-01.png`와 `media/asset-03-02.jpg`를 기존 `media/` 폴더에 추가합니다.
+1. 직전 사례 3 수정본을 배포했다면 `cases.js`와 `case-section.js`를 교체합니다.
 2. 전체 사이트를 처음 배포한다면 코드와 `media/` 폴더를 함께 올립니다.
 
 ## 이미지 파일 자체 수집 제한

@@ -27,7 +27,7 @@ function caseNarrative(item) {
     <h3>배경 및 과제</h3><p>${escapeHtml(item.background)}</p>
     <h3>핵심 전략</h3><p>${escapeHtml(item.strategy)}</p>
     <h3>담당 역할</h3><p>${escapeHtml(item.role)}</p>
-    <h3>주요 실행</h3><ul>${item.actions.map(action => `<li>${escapeHtml(action)}</li>`).join('')}</ul>
+    <h3>주요 실행</h3><ul>${item.actions.map(action => `<li>${escapeHtml(action).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</li>`).join('')}</ul>
   </div>`;
 }
 
