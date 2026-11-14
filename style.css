@@ -225,3 +225,16 @@ h2 {
   .nav .links { flex-wrap:wrap; gap:5px 12px; }
   .case-outcome { padding:16px; }
 }
+
+.case-gallery-expanded {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-top:22px;
+}
+.case-gallery-expanded .case-figure { margin:0; }
+.case-gallery-expanded .case-figure-wide { grid-column:1 / -1; }
+.case-gallery-expanded .case-figure-wide img { max-height:600px; }
+@media (max-width:680px) {
+  .case-gallery-expanded { grid-template-columns:1fr; }
+}

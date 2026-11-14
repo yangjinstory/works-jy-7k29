@@ -3,7 +3,7 @@ function caseDiagram(items) {
 }
 
 function caseMedia(item) {
-  return item ? `<figure class="case-figure"><button type="button" class="material-button" data-case-image="${escapeHtml(item.src)}" data-caption="${escapeHtml(item.caption)}" aria-label="${escapeHtml(item.caption)} 확대"><img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.caption)}" loading="lazy"></button><figcaption>${escapeHtml(item.caption)}</figcaption></figure>` : '';
+  return item ? `<figure class="case-figure${item.wide ? ' case-figure-wide' : ''}"><button type="button" class="material-button" data-case-image="${escapeHtml(item.src)}" data-caption="${escapeHtml(item.caption)}" aria-label="${escapeHtml(item.caption)} 확대"><img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.caption)}" loading="lazy"></button><figcaption>${escapeHtml(item.caption)}</figcaption></figure>` : '';
 }
 
 function caseMetrics(item) {
@@ -48,10 +48,11 @@ if (document.getElementById('caseCards')) {
         <div class="case-evidence">
           <h3>제작 결과물</h3><p>${escapeHtml(item.evidence)}</p>
           ${caseDiagram(item.diagram)}
-          <div class="case-gallery">${caseMedia(item.media)}${caseMedia(item.extra)}</div>
+          ${item.gallery ? '' : `<div class="case-gallery">${caseMedia(item.media)}${caseMedia(item.extra)}</div>`}
           ${caseLink(item)}
         </div>
       </div>
+      ${item.gallery ? `<div class="case-gallery case-gallery-expanded">${item.gallery.map(caseMedia).join('')}</div>` : ''}
       <div class="case-outcome"><h3>프로젝트 성과 및 인사이트</h3>${caseMetrics(item)}<p>${escapeHtml(item.insight)}</p></div>
       <a class="case-top" href="#cases">↑ 주요 성과 사례 목록으로</a>
     </article>`).join('');

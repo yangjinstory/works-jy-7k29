@@ -1,15 +1,26 @@
 const CASES = [
   {
     title: '양지 메가스터디 기숙학원 확장 이전 IMC',
-    headline: '오랜 명성과 노하우에 프리미엄 시설까지!',
+    headline: '역사와 전통, 명성과 노하우에 프리미엄 시설까지!',
     background: '양지 메가스터디 기숙학원이 새 건물로 확장 이전했습니다. 새 시설의 품질을 알리는 동시에, 학부모와 학생에게 기존 학원의 명성과 운영 노하우가 이어진다는 점을 전달해야 했습니다.',
     strategy: '기존 브랜드의 신뢰와 신규 시설의 가치를 한 문장에 담고, 어느 채널에서 처음 보더라도 같은 메시지를 접하도록 캠페인을 설계했습니다.',
     role: '핵심 메시지와 채널별 홍보 기획, 시설 사진·영상 촬영 외부업체 협업, 브로슈어 및 학생 인터뷰 영상 기획.',
     actions: ['홈페이지·검색광고·디스플레이 광고·언론홍보에 공통 메시지 적용', '시설 사진과 영상 촬영을 외부업체와 진행하고 프리미엄 시설 브로슈어 기획', '학생의 목소리를 담은 인터뷰 영상 제작'],
-    evidence: '제작 결과물 · 이전 안내 홈페이지, 검색·디스플레이 광고, 시설 브로슈어, 학생 인터뷰 영상',
-    related: ['양지 기숙학원 영상 · 기존 포트폴리오 관련 자료', 'https://youtu.be/WaW3T1D_78U?si=k45hRbAxDv_pPzUV'],
+    evidence: '확장 이전 캠페인에 사용한 영상 캡처, 시설 소개 브로슈어, 홈페이지와 언론 보도 자료입니다.',
+    gallery: [
+      {src:'media/asset-01-02.png', caption:'시설 소개 브로슈어', wide:true},
+      {src:'media/asset-01-01.jpg', caption:'프리미엄 시설 홍보영상 캡처'},
+      {src:'media/asset-01-03.jpg', caption:'재원생 인터뷰 홍보영상 캡처'},
+      {src:'media/asset-01-04.jpg', caption:'홈페이지 홍보 페이지 기획', wide:true},
+      {src:'media/asset-01-05.jpg', caption:'확장 개원 홍보 기사', wide:true},
+      {src:'media/asset-01-06.jpg', caption:'그랜드 오픈 홍보 기사', wide:true}
+    ],
     diagram: ['명성과 운영 노하우 + 프리미엄 시설', '확장 이전 공통 메시지', '홈페이지 · 광고 · 언론 · 브로슈어'],
-    metrics: [{value:'모집 마감', label:'수용 규모 확대 이후'}],
+    metrics: [
+      {value:'모집 마감', label:'수용 규모 확대 이후'},
+      {value:'약 2.2만 회', label:'프리미엄 시설 홍보영상 자연 조회수'},
+      {value:'약 1.7만 회', label:'재원생 인터뷰 홍보영상 자연 조회수'}
+    ],
     insight: '시설의 변화와 브랜드가 쌓아온 신뢰를 함께 전달해, 확장 이전의 의미를 고객이 한 문장으로 이해하도록 구성했습니다.'
   },
   {
@@ -20,7 +31,7 @@ const CASES = [
     role: '핵심 메시지·콘셉트 개발, 홈페이지·검색광고·디스플레이 광고·영상 기획, 학원별 활용 가이드 배포.',
     actions: ['핵심 메시지 ‘습관을 잡으면 성적이 잡는다’를 바탕으로 온라인 소재 기획', '학원별 교재 표지·브로슈어·오프라인 홍보물에 적용할 가이드 배포'],
     evidence: '기존 포트폴리오의 윈터스쿨 홈페이지와 홍보영상',
-    media: {src:'winter-home.jpg', caption:'윈터스쿨 홈페이지 · 기존 작업물 발췌'},
+    media: {src:'media/asset-21.jpg', caption:'윈터스쿨 홈페이지 · 기존 작업물 발췌'},
     related: ['윈터스쿨 홍보영상 보기', 'https://naver.me/xnOyZQJf'],
     metrics: [{value:'3개년', label:'개발 슬로건 활용'}],
     insight: '채널별 제작물에 공통 콘셉트를 담고, 학원별 실무자가 같은 방향으로 적용할 수 있도록 가이드로 남겼습니다.'
@@ -62,8 +73,8 @@ const CASES = [
     role: '타깃 및 행사명 기획, 전 학원 동일 일자 운영안과 온·오프라인 홍보 기획.',
     actions: ['전체 학원 동일 일자 통합 설명회 기획', '온라인 광고·문자·언론홍보를 통해 설명회 안내 및 참가 신청 유도'],
     evidence: '설명회 신청 홈페이지 및 해당 행사 언론홍보',
-    media: {src:'project4_material_1.jpg', caption:'겨울방학 학습전략 설명회 신청 홈페이지'},
-    extra: {src:'winter-event-press.jpg', caption:'겨울방학 학습전략 설명회 언론홍보 발췌'},
+    media: {src:'media/project4_material_1.jpg', caption:'겨울방학 학습전략 설명회 신청 홈페이지'},
+    extra: {src:'media/asset-22.jpg', caption:'겨울방학 학습전략 설명회 언론홍보 발췌'},
     chartNote: '항목별 재수 설명회 수치를 100으로 환산',
     metrics: [
       {value:'+36%', label:'재수 설명회 대비 참석자 수', index:136},

@@ -2,29 +2,29 @@
 // 프로젝트 목록과 상세 내용을 한 페이지에 표시합니다.
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
 const materialImages=[
- {src:'project1_material_1.png',title:'연간 광고선전비 예산 수립'},
- {src:'project1_material_2.png',title:'월간 매체별 광고 계획'},
- {src:'project1_material_3.png',title:'주요 홍보이슈 통합 마케팅 예산 산출'},
- {src:'project1_material_4.png',title:'매출 대비 광고비 비중 관리'}
+ {src:'media/project1_material_1.png',title:'연간 광고선전비 예산 수립'},
+ {src:'media/project1_material_2.png',title:'월간 매체별 광고 계획'},
+ {src:'media/project1_material_3.png',title:'주요 홍보이슈 통합 마케팅 예산 산출'},
+ {src:'media/project1_material_4.png',title:'매출 대비 광고비 비중 관리'}
 ];
 const project3Images=[
- {src:'project3_material_1.png',title:'모집상품 슬로건 및 핵심 컨셉 기획(홈페이지 및 홍보물 반영)'},
- {src:'project3_material_2.png',title:'합격생 인터뷰, 내부 이벤트, 홍보 영상 기획 '},
- {src:'project3_material_3.png',title:'디스플레이 광고 소재 기획'},
- {src:'project3_material_4.png',title:'온라인 프로모션·체험단·스터디·제휴 이벤트 진행'}
+ {src:'media/project3_material_1.png',title:'모집상품 슬로건 및 핵심 컨셉 기획(홈페이지 및 홍보물 반영)'},
+ {src:'media/project3_material_2.png',title:'합격생 인터뷰, 내부 이벤트, 홍보 영상 기획 '},
+ {src:'media/project3_material_3.png',title:'디스플레이 광고 소재 기획'},
+ {src:'media/project3_material_4.png',title:'온라인 프로모션·체험단·스터디·제휴 이벤트 진행'}
 ];
 const project4Images=[
- {src:'project4_material_1.jpg',title:'설명회 홈페이지 기획'},
- {src:'project4_material_2.jpg',title:'설명회 홍보 진행'},
- {src:'project4_material_3.png',title:'대규모 설명회 현장 운영 지원'},
- {src:'project4_material_4.png',title:'설명회 결과 분석 및 보고'}
+ {src:'media/project4_material_1.jpg',title:'설명회 홈페이지 기획'},
+ {src:'media/project4_material_2.jpg',title:'설명회 홍보 진행'},
+ {src:'media/project4_material_3.png',title:'대규모 설명회 현장 운영 지원'},
+ {src:'media/project4_material_4.png',title:'설명회 결과 분석 및 보고'}
 ];
 
 const project2Images=[
- {src:'project2_material_1.png',title:'광고 운영 성과 지표'},
- {src:'project2_material_2.png',title:'매체별 광고 운영 경험'},
- {src:'project2_material_3.png',title:'광고 데이터 및 전환 분석'},
- {src:'project2_material_4.png',title:'캠페인별 광고 성과 비교'}
+ {src:'media/project2_material_1.png',title:'광고 운영 성과 지표'},
+ {src:'media/project2_material_2.png',title:'매체별 광고 운영 경험'},
+ {src:'media/project2_material_3.png',title:'광고 데이터 및 전환 분석'},
+ {src:'media/project2_material_4.png',title:'캠페인별 광고 성과 비교'}
 ];
 // PROJECT 3 첫 번째 이미지의 하단 영상 썸네일 3개에만 링크를 연결합니다.
 const project3VideoLinks=[
