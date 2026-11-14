@@ -234,3 +234,21 @@ h2 {
   .nav .links { flex-wrap:wrap; gap:5px 12px; }
   .case-outcome { padding:16px; }
 }
+
+#project-2 .portfolio-materials {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.page-end {
+  padding:56px 24px;
+  background:#10253d;
+  color:white;
+  text-align:center;
+  font-size:clamp(22px,4vw,32px);
+  font-weight:800;
+  letter-spacing:.12em;
+}
+@media (max-width:680px) {
+  #project-2 .portfolio-materials { gap:6px; }
+  #project-2 .portfolio-materials figure { padding:5px; }
+  #project-2 .portfolio-materials figcaption { font-size:11px; }
+}

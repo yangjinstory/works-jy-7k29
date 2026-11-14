@@ -21,7 +21,6 @@ const project4Images=[
 ];
 
 const project2Images=[
- {src:'media/project2_material_1.png',title:'광고 운영 성과 지표'},
  {src:'media/project2_material_2.png',title:'매체별 광고 운영 경험'},
  {src:'media/project2_material_3.png',title:'광고 데이터 및 전환 분석'},
  {src:'media/project2_material_4.png',title:'캠페인별 광고 성과 비교'}

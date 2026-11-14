@@ -35,14 +35,14 @@ if (document.getElementById('caseCards')) {
   document.getElementById('caseCards').innerHTML = CASES.map((item, index) => `
     <a class="card" href="#case-${index + 1}">
       <div class="num">사례 ${String(index + 1).padStart(2, '0')}</div>
-      <h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.headline)}</p>
+      <h3>${escapeHtml(item.title)}</h3>
       <strong>${escapeHtml(item.metrics[0].value)} ↘</strong>
     </a>`).join('');
 
   document.getElementById('caseArticles').innerHTML = CASES.map((item, index) => `
     <article class="case-study campaign" id="case-${index + 1}">
-      <div class="eyebrow case-eyebrow">사례 ${String(index + 1).padStart(2, '0')} · ${escapeHtml(item.title)}</div>
-      <h2>${escapeHtml(item.headline)}</h2>
+      <div class="eyebrow case-eyebrow">사례 ${String(index + 1).padStart(2, '0')}</div>
+      <h2>${escapeHtml(item.title)}</h2>
       <div class="campaign-grid">
         ${caseNarrative(item)}
         <div class="case-evidence">
