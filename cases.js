@@ -11,10 +11,8 @@ const CASES = [
       {src:'media/asset-01-01.jpg', caption:'프리미엄 시설 홍보영상 캡처'},
       {src:'media/asset-01-03.jpg', caption:'재원생 인터뷰 홍보영상 캡처'},
       {src:'media/asset-01-04.jpg', caption:'홈페이지 홍보 페이지 기획'},
-      {src:'media/asset-01-05.jpg', caption:'확장 개원 홍보 기사'},
-      {src:'media/asset-01-06.jpg', caption:'그랜드 오픈 홍보 기사'}
+      {src:'media/asset-01-07.png', caption:'확장 개원 및 그랜드 오픈 홍보 기사', wide:true}
     ],
-    diagram: ['명성과 운영 노하우 + 프리미엄 시설', '확장 이전 공통 메시지', '홈페이지 · 광고 · 언론 · 브로슈어'],
     metrics: [
       {value:'모집 마감', label:'수용 규모 확대 이후'},
       {value:'약 2.2만 회', label:'프리미엄 시설 홍보영상 자연 조회수'},

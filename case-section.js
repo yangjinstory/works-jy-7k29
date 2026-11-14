@@ -3,14 +3,14 @@ function caseDiagram(items) {
 }
 
 function caseMedia(item) {
-  return item ? `<figure class="case-figure"><button type="button" class="material-button" data-case-image="${escapeHtml(item.src)}" data-caption="${escapeHtml(item.caption)}" aria-label="${escapeHtml(item.caption)} 확대"><img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.caption)}" loading="lazy"></button><figcaption>${escapeHtml(item.caption)}</figcaption></figure>` : '';
+  return item ? `<figure class="case-figure${item.wide ? ' case-figure-wide' : ''}"><button type="button" class="material-button" data-case-image="${escapeHtml(item.src)}" data-caption="${escapeHtml(item.caption)}" aria-label="${escapeHtml(item.caption)} 확대"><img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.caption)}" loading="lazy"></button><figcaption>${escapeHtml(item.caption)}</figcaption></figure>` : '';
 }
 
 function caseMetrics(item) {
   const scale = Math.max(100, ...item.metrics.map(metric => metric.index ?? 0));
   return `<div class="case-metrics">${item.metrics.map(metric => `
     <div class="case-metric">
-      <strong>${escapeHtml(metric.value)}</strong><span>${escapeHtml(metric.label)}</span>
+      <span>${escapeHtml(metric.label)}</span><strong>${escapeHtml(metric.value)}</strong>
       ${metric.index ? `<div class="index-bars" role="img" aria-label="기준 100, 비교 지수 ${metric.index}">
         <div><i style="width:${100 / scale * 100}%"></i><b>100</b></div>
         <div><i style="width:${metric.index / scale * 100}%"></i><b>${metric.index}</b></div>

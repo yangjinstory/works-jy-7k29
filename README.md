@@ -6,9 +6,9 @@
 
 ## 기존 GitHub Pages 사이트에 반영하기
 
-1. `works-jy-7k29` 저장소의 배포 위치에서 `index.html`, `style.css`, `cases.js`, `case-section.js`, `script.js` 다섯 파일을 교체합니다.
-2. `media/` 폴더가 아직 없다면 폴더째 올립니다. 예를 들어 저장소에서 `media/project4_material_1.jpg`가 열려야 합니다.
-3. 새 이미지 경로가 열리는 것을 확인한 뒤 저장소 루트에 남아 있는 이전 이미지 사본을 정리합니다.
+1. `works-jy-7k29`의 최신 배포본에서 `index.html`, `style.css`, `cases.js`, `case-section.js` 네 파일을 교체합니다.
+2. 새 기사 이미지 `media/asset-01-07.png`를 기존 `media/` 폴더에 추가합니다. 이전 기사 파일 두 개는 삭제할 수 있습니다.
+3. 이전 수정 사항까지 한 번에 적용하려면 압축 파일의 사이트 코드와 `media/` 폴더 전체를 올립니다.
 
 ## 이미지 파일 자체 수집 제한
 
