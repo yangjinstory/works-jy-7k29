@@ -53,17 +53,11 @@ function projectMaterials(items=materialImages){
 function renderCards(){
  const root=document.getElementById('projectCards');
  if(!root)return;
- root.innerHTML=PROJECTS.map((p,i)=>`<a class="card" href="#project-${i+1}"><div class="num">PROJECT ${String(i+1).padStart(2,'0')}</div><h3>${escapeHtml(p.title)}</h3><div class="tag">${escapeHtml(p.category)}</div><p>${escapeHtml(p.summary)}</p><strong>CASE STUDY ↘</strong></a>`).join('');
+ root.innerHTML=PROJECTS.map((p,i)=>`<a class="card" href="#project-${i+1}"><h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.summary)}</p><strong>상세 보기 ↘</strong></a>`).join('');
  let container=document.getElementById('projectCaseStudies');
  if(!container){container=document.createElement('div');container.id='projectCaseStudies';root.insertAdjacentElement('afterend',container)}
- container.innerHTML=PROJECTS.map((p,i)=>`<article class="case-study" id="project-${i+1}"><div class="eyebrow case-eyebrow">PROJECT ${String(i+1).padStart(2,'0')} · ${escapeHtml(p.category)}</div><h2>${escapeHtml(p.title)}</h2><p class="lead">${escapeHtml(p.summary)}</p>${i===0?projectMaterials():i===1?projectMaterials(project2Images):i===2?projectMaterials(project3Images):i===3?projectMaterials(project4Images):''}${[['KPI',p.kpi],['ROLE',p.situation],['ACTION',p.action],['RESULT',p.result]].map(([k,v])=>`<div class="detail"><h4>${k}</h4><p${(k==='ACTION'||k==='RESULT')?' style="white-space:pre-line;"':''}>${escapeHtml(v)}</p></div>`).join('')}<a class="case-top" href="#projects">↑ 프로젝트 목록으로</a></article>`).join('');
- const detail=document.getElementById('detailView');
- if(detail)detail.classList.add('hidden');
- const overview=document.getElementById('overview');
- if(overview)overview.classList.remove('hidden');
+ container.innerHTML=PROJECTS.map((p,i)=>`<article class="case-study" id="project-${i+1}"><h2>${escapeHtml(p.title)}</h2><p class="lead">${escapeHtml(p.summary)}</p>${i===0?projectMaterials():i===1?projectMaterials(project2Images):i===2?projectMaterials(project3Images):i===3?projectMaterials(project4Images):''}${[['업무 목표',p.kpi],['담당 역할',p.situation],['주요 실행',p.action],['성과',p.result]].map(([k,v])=>`<div class="detail"><h4>${k}</h4><p${(k==='주요 실행'||k==='성과')?' style="white-space:pre-line;"':''}>${escapeHtml(v)}</p></div>`).join('')}<a class="case-top" href="#projects">↑ 핵심 업무 목록으로</a></article>`).join('');
 }
-function openDetail(i){document.getElementById(`project-${i+1}`)?.scrollIntoView({behavior:'smooth'});}
-function closeDetail(){location.hash='projects';}
 function openMaterial(project,i){
  const item=(project==='project3'?project3Images:project==='project2'?project2Images:project==='project4'?project4Images:materialImages)[i];if(!item)return;
  closeMaterial();
@@ -78,11 +72,3 @@ function openMaterial(project,i){
 function closeMaterial(){document.getElementById('materialLightbox')?.remove();}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMaterial()});
 renderCards();
-
-// CAREER: 기존 타임라인 스타일을 유지하며 경력 데이터를 표시합니다.
-function renderCareers(){
- const root=document.getElementById('careerTimeline');
- if(!root || typeof CAREERS==='undefined')return;
- root.innerHTML=CAREERS.map(c=>`<div class="job"><h3>${escapeHtml(c.company)} · ${escapeHtml(c.department)} | ${escapeHtml(c.position)}</h3><small>${escapeHtml(c.period)}</small><p>${escapeHtml(c.description)}</p></div>`).join('');
-}
-renderCareers();

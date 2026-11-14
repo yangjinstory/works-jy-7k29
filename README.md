@@ -2,7 +2,7 @@
 
 ## 미리보기
 
-압축을 풀고 `index.html`을 엽니다. 프로젝트와 성과 사례를 선택하면 해당 상세 내용으로 이동합니다. 이미지는 클릭하여 확대하고, 영상 링크는 새 탭에서 엽니다.
+압축을 풀고 `index.html`을 엽니다. 핵심 업무와 주요 성과 사례를 선택하면 해당 상세 내용으로 이동합니다. 이미지는 클릭하여 확대하고, 영상 링크는 새 탭에서 엽니다.
 
 ## 기존 포트폴리오와 다른 주소에 게시하기
 
@@ -11,7 +11,9 @@
 3. 저장소의 **Settings → Pages**에서 **Deploy from a branch**, `main`, `/ (root)`를 선택합니다.
 4. 발행 주소는 `https://<GitHub 사용자명>.github.io/mirae-n-portfolio/` 형식입니다. 실제 주소는 Pages 설정에서 확인합니다.
 
-웹 반영 파일은 `index.html`, `style.css`, `cases.js`, `case-section.js`와 사례에 사용한 JPG입니다. 기존 `content.js`, `script.js`와 Project 01–04 원본 이미지 16개도 함께 포함했습니다.
+## 이미 올린 웹 포트폴리오 수정하기
+
+현재 저장소의 같은 위치에서 `index.html`, `style.css`, `content.js`, `script.js`, `case-section.js`를 압축 파일의 수정본으로 교체합니다.
 
 ## 제출 전 확인 항목
 
