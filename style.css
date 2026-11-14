@@ -265,7 +265,7 @@ h2 {
 }
 
 #case-4 .case-gallery { align-items:start; }
-#case-4 .case-figure:first-child { grid-row:span 3; }
+#case-4 .case-figure:first-child { grid-row:span 2; }
 #case-4 .case-figure:first-child .material-button { aspect-ratio:auto; }
 #case-4 .case-figure:first-child img {
   height:auto;
@@ -276,3 +276,7 @@ h2 {
   #case-4 .case-gallery { grid-template-columns:1fr; }
   #case-4 .case-figure:first-child { grid-row:auto; }
 }
+
+#case-3 [data-case-image="media/asset-03-02.jpg"] { width:90%; margin-inline:auto; }
+#case-4 .case-figure:last-child .material-button { aspect-ratio:auto; }
+#case-4 .case-figure:last-child img { height:auto; aspect-ratio:auto; }
